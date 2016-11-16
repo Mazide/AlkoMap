@@ -1,0 +1,725 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		953F05B01DCE9B2900BDEB40 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05AF1DCE9B2900BDEB40 /* AppDelegate.swift */; };
+		953F05B51DCE9B2900BDEB40 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F05B31DCE9B2900BDEB40 /* Main.storyboard */; };
+		953F05B71DCE9B2900BDEB40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 953F05B61DCE9B2900BDEB40 /* Assets.xcassets */; };
+		953F05BA1DCE9B2900BDEB40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F05B81DCE9B2900BDEB40 /* LaunchScreen.storyboard */; };
+		953F05C51DCE9B2A00BDEB40 /* AlcoMapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05C41DCE9B2A00BDEB40 /* AlcoMapTests.swift */; };
+		953F05D01DCE9B2A00BDEB40 /* AlcoMapUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05CF1DCE9B2A00BDEB40 /* AlcoMapUITests.swift */; };
+		953F05E31DCE9BE400BDEB40 /* Authorization.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F05E21DCE9BE400BDEB40 /* Authorization.storyboard */; };
+		953F05E51DCE9C0000BDEB40 /* NDAuthorizationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05E41DCE9C0000BDEB40 /* NDAuthorizationVC.swift */; };
+		953F05E81DCE9DA100BDEB40 /* NDStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05E71DCE9DA100BDEB40 /* NDStartVC.swift */; };
+		953F05EA1DCE9EA800BDEB40 /* NDLoginServiceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05E91DCE9EA800BDEB40 /* NDLoginServiceVC.swift */; };
+		953F05EC1DD26BD100BDEB40 /* NDMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05EB1DD26BD100BDEB40 /* NDMapVC.swift */; };
+		953F05EE1DD26BDC00BDEB40 /* Map.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 953F05ED1DD26BDC00BDEB40 /* Map.storyboard */; };
+		953F05F11DD27BD000BDEB40 /* NDRequestExecutor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05F01DD27BD000BDEB40 /* NDRequestExecutor.swift */; };
+		953F05F41DD27D2400BDEB40 /* NDAlcoPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 953F05F31DD27D2400BDEB40 /* NDAlcoPoint.swift */; };
+		95CA8E801DD62BD0000390AF /* NDTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8E7F1DD62BD0000390AF /* NDTextField.swift */; };
+		95CA8E821DD62C3A000390AF /* NDAuthorizationTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CA8E811DD62C3A000390AF /* NDAuthorizationTextField.swift */; };
+		EC59E8F59AC456155744410D /* Pods_AlcoMap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECC6E4E0244851D1F43137AA /* Pods_AlcoMap.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		953F05C11DCE9B2A00BDEB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953F05A41DCE9B2900BDEB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 953F05AB1DCE9B2900BDEB40;
+			remoteInfo = AlcoMap;
+		};
+		953F05CC1DCE9B2A00BDEB40 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 953F05A41DCE9B2900BDEB40 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 953F05AB1DCE9B2900BDEB40;
+			remoteInfo = AlcoMap;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		11EE87F7FDA621C06C029FF4 /* Pods-AlcoMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoMap.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlcoMap/Pods-AlcoMap.release.xcconfig"; sourceTree = "<group>"; };
+		130C3AA6C74FD87F8C4CF951 /* Pods-AlcoMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlcoMap.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AlcoMap/Pods-AlcoMap.debug.xcconfig"; sourceTree = "<group>"; };
+		953F05AC1DCE9B2900BDEB40 /* AlcoMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlcoMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		953F05AF1DCE9B2900BDEB40 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		953F05B41DCE9B2900BDEB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		953F05B61DCE9B2900BDEB40 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		953F05B91DCE9B2900BDEB40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		953F05BB1DCE9B2900BDEB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953F05C01DCE9B2A00BDEB40 /* AlcoMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		953F05C41DCE9B2A00BDEB40 /* AlcoMapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoMapTests.swift; sourceTree = "<group>"; };
+		953F05C61DCE9B2A00BDEB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953F05CB1DCE9B2A00BDEB40 /* AlcoMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlcoMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		953F05CF1DCE9B2A00BDEB40 /* AlcoMapUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlcoMapUITests.swift; sourceTree = "<group>"; };
+		953F05D11DCE9B2A00BDEB40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		953F05E21DCE9BE400BDEB40 /* Authorization.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Authorization.storyboard; sourceTree = "<group>"; };
+		953F05E41DCE9C0000BDEB40 /* NDAuthorizationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDAuthorizationVC.swift; sourceTree = "<group>"; };
+		953F05E71DCE9DA100BDEB40 /* NDStartVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDStartVC.swift; sourceTree = "<group>"; };
+		953F05E91DCE9EA800BDEB40 /* NDLoginServiceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDLoginServiceVC.swift; sourceTree = "<group>"; };
+		953F05EB1DD26BD100BDEB40 /* NDMapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDMapVC.swift; sourceTree = "<group>"; };
+		953F05ED1DD26BDC00BDEB40 /* Map.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Map.storyboard; sourceTree = "<group>"; };
+		953F05F01DD27BD000BDEB40 /* NDRequestExecutor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDRequestExecutor.swift; sourceTree = "<group>"; };
+		953F05F31DD27D2400BDEB40 /* NDAlcoPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDAlcoPoint.swift; sourceTree = "<group>"; };
+		95CA8E7F1DD62BD0000390AF /* NDTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDTextField.swift; sourceTree = "<group>"; };
+		95CA8E811DD62C3A000390AF /* NDAuthorizationTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NDAuthorizationTextField.swift; sourceTree = "<group>"; };
+		ECC6E4E0244851D1F43137AA /* Pods_AlcoMap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlcoMap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		953F05A91DCE9B2900BDEB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC59E8F59AC456155744410D /* Pods_AlcoMap.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05BD1DCE9B2A00BDEB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05C81DCE9B2A00BDEB40 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50BDE63375D42B5C5B9AFECB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				130C3AA6C74FD87F8C4CF951 /* Pods-AlcoMap.debug.xcconfig */,
+				11EE87F7FDA621C06C029FF4 /* Pods-AlcoMap.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		71ABE40B29957DAA0EF68C7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECC6E4E0244851D1F43137AA /* Pods_AlcoMap.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		953F05A31DCE9B2900BDEB40 = {
+			isa = PBXGroup;
+			children = (
+				953F05AE1DCE9B2900BDEB40 /* AlcoMap */,
+				953F05C31DCE9B2A00BDEB40 /* AlcoMapTests */,
+				953F05CE1DCE9B2A00BDEB40 /* AlcoMapUITests */,
+				953F05AD1DCE9B2900BDEB40 /* Products */,
+				50BDE63375D42B5C5B9AFECB /* Pods */,
+				71ABE40B29957DAA0EF68C7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		953F05AD1DCE9B2900BDEB40 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				953F05AC1DCE9B2900BDEB40 /* AlcoMap.app */,
+				953F05C01DCE9B2A00BDEB40 /* AlcoMapTests.xctest */,
+				953F05CB1DCE9B2A00BDEB40 /* AlcoMapUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		953F05AE1DCE9B2900BDEB40 /* AlcoMap */ = {
+			isa = PBXGroup;
+			children = (
+				953F05AF1DCE9B2900BDEB40 /* AppDelegate.swift */,
+				95CA8E7C1DD62BA9000390AF /* Base */,
+				953F05E61DCE9D8A00BDEB40 /* Start */,
+				953F05DD1DCE9B6E00BDEB40 /* Authorization */,
+				953F05DE1DCE9B8D00BDEB40 /* Map */,
+				953F05DF1DCE9B9300BDEB40 /* List */,
+				953F05F21DD27D0B00BDEB40 /* Model */,
+				953F05EF1DD27BAD00BDEB40 /* Api */,
+				953F05B61DCE9B2900BDEB40 /* Assets.xcassets */,
+				953F05B81DCE9B2900BDEB40 /* LaunchScreen.storyboard */,
+				953F05BB1DCE9B2900BDEB40 /* Info.plist */,
+			);
+			path = AlcoMap;
+			sourceTree = "<group>";
+		};
+		953F05C31DCE9B2A00BDEB40 /* AlcoMapTests */ = {
+			isa = PBXGroup;
+			children = (
+				953F05C41DCE9B2A00BDEB40 /* AlcoMapTests.swift */,
+				953F05C61DCE9B2A00BDEB40 /* Info.plist */,
+			);
+			path = AlcoMapTests;
+			sourceTree = "<group>";
+		};
+		953F05CE1DCE9B2A00BDEB40 /* AlcoMapUITests */ = {
+			isa = PBXGroup;
+			children = (
+				953F05CF1DCE9B2A00BDEB40 /* AlcoMapUITests.swift */,
+				953F05D11DCE9B2A00BDEB40 /* Info.plist */,
+			);
+			path = AlcoMapUITests;
+			sourceTree = "<group>";
+		};
+		953F05DD1DCE9B6E00BDEB40 /* Authorization */ = {
+			isa = PBXGroup;
+			children = (
+				953F05E21DCE9BE400BDEB40 /* Authorization.storyboard */,
+				953F05E41DCE9C0000BDEB40 /* NDAuthorizationVC.swift */,
+				953F05E91DCE9EA800BDEB40 /* NDLoginServiceVC.swift */,
+			);
+			name = Authorization;
+			sourceTree = "<group>";
+		};
+		953F05DE1DCE9B8D00BDEB40 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				953F05ED1DD26BDC00BDEB40 /* Map.storyboard */,
+				953F05EB1DD26BD100BDEB40 /* NDMapVC.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		953F05DF1DCE9B9300BDEB40 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = List;
+			sourceTree = "<group>";
+		};
+		953F05E61DCE9D8A00BDEB40 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				953F05B31DCE9B2900BDEB40 /* Main.storyboard */,
+				953F05E71DCE9DA100BDEB40 /* NDStartVC.swift */,
+			);
+			name = Start;
+			sourceTree = "<group>";
+		};
+		953F05EF1DD27BAD00BDEB40 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				953F05F01DD27BD000BDEB40 /* NDRequestExecutor.swift */,
+			);
+			name = Api;
+			sourceTree = "<group>";
+		};
+		953F05F21DD27D0B00BDEB40 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				953F05F31DD27D2400BDEB40 /* NDAlcoPoint.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		95CA8E7C1DD62BA9000390AF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8E7D1DD62BB0000390AF /* UI */,
+			);
+			name = Base;
+			sourceTree = "<group>";
+		};
+		95CA8E7D1DD62BB0000390AF /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8E7E1DD62BBA000390AF /* TextField */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		95CA8E7E1DD62BBA000390AF /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				95CA8E7F1DD62BD0000390AF /* NDTextField.swift */,
+				95CA8E811DD62C3A000390AF /* NDAuthorizationTextField.swift */,
+			);
+			name = TextField;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		953F05AB1DCE9B2900BDEB40 /* AlcoMap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953F05D41DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMap" */;
+			buildPhases = (
+				B06D28C21A5A3AE80676B1C8 /* [CP] Check Pods Manifest.lock */,
+				953F05A81DCE9B2900BDEB40 /* Sources */,
+				953F05A91DCE9B2900BDEB40 /* Frameworks */,
+				953F05AA1DCE9B2900BDEB40 /* Resources */,
+				6E692A0A0C0D88D4BC6A318C /* [CP] Embed Pods Frameworks */,
+				E5E31EC5A534741A36DF2E08 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlcoMap;
+			productName = AlcoMap;
+			productReference = 953F05AC1DCE9B2900BDEB40 /* AlcoMap.app */;
+			productType = "com.apple.product-type.application";
+		};
+		953F05BF1DCE9B2A00BDEB40 /* AlcoMapTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953F05D71DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMapTests" */;
+			buildPhases = (
+				953F05BC1DCE9B2A00BDEB40 /* Sources */,
+				953F05BD1DCE9B2A00BDEB40 /* Frameworks */,
+				953F05BE1DCE9B2A00BDEB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				953F05C21DCE9B2A00BDEB40 /* PBXTargetDependency */,
+			);
+			name = AlcoMapTests;
+			productName = AlcoMapTests;
+			productReference = 953F05C01DCE9B2A00BDEB40 /* AlcoMapTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		953F05CA1DCE9B2A00BDEB40 /* AlcoMapUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 953F05DA1DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMapUITests" */;
+			buildPhases = (
+				953F05C71DCE9B2A00BDEB40 /* Sources */,
+				953F05C81DCE9B2A00BDEB40 /* Frameworks */,
+				953F05C91DCE9B2A00BDEB40 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				953F05CD1DCE9B2A00BDEB40 /* PBXTargetDependency */,
+			);
+			name = AlcoMapUITests;
+			productName = AlcoMapUITests;
+			productReference = 953F05CB1DCE9B2A00BDEB40 /* AlcoMapUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		953F05A41DCE9B2900BDEB40 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Nikita Demidov";
+				TargetAttributes = {
+					953F05AB1DCE9B2900BDEB40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3E6P6Z2C4R;
+						ProvisioningStyle = Automatic;
+					};
+					953F05BF1DCE9B2A00BDEB40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3E6P6Z2C4R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 953F05AB1DCE9B2900BDEB40;
+					};
+					953F05CA1DCE9B2A00BDEB40 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 3E6P6Z2C4R;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 953F05AB1DCE9B2900BDEB40;
+					};
+				};
+			};
+			buildConfigurationList = 953F05A71DCE9B2900BDEB40 /* Build configuration list for PBXProject "AlcoMap" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 953F05A31DCE9B2900BDEB40;
+			productRefGroup = 953F05AD1DCE9B2900BDEB40 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				953F05AB1DCE9B2900BDEB40 /* AlcoMap */,
+				953F05BF1DCE9B2A00BDEB40 /* AlcoMapTests */,
+				953F05CA1DCE9B2A00BDEB40 /* AlcoMapUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		953F05AA1DCE9B2900BDEB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953F05E31DCE9BE400BDEB40 /* Authorization.storyboard in Resources */,
+				953F05BA1DCE9B2900BDEB40 /* LaunchScreen.storyboard in Resources */,
+				953F05EE1DD26BDC00BDEB40 /* Map.storyboard in Resources */,
+				953F05B71DCE9B2900BDEB40 /* Assets.xcassets in Resources */,
+				953F05B51DCE9B2900BDEB40 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05BE1DCE9B2A00BDEB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05C91DCE9B2A00BDEB40 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6E692A0A0C0D88D4BC6A318C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlcoMap/Pods-AlcoMap-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B06D28C21A5A3AE80676B1C8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E5E31EC5A534741A36DF2E08 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AlcoMap/Pods-AlcoMap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		953F05A81DCE9B2900BDEB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953F05F41DD27D2400BDEB40 /* NDAlcoPoint.swift in Sources */,
+				953F05EC1DD26BD100BDEB40 /* NDMapVC.swift in Sources */,
+				95CA8E821DD62C3A000390AF /* NDAuthorizationTextField.swift in Sources */,
+				953F05E51DCE9C0000BDEB40 /* NDAuthorizationVC.swift in Sources */,
+				953F05F11DD27BD000BDEB40 /* NDRequestExecutor.swift in Sources */,
+				953F05B01DCE9B2900BDEB40 /* AppDelegate.swift in Sources */,
+				953F05EA1DCE9EA800BDEB40 /* NDLoginServiceVC.swift in Sources */,
+				953F05E81DCE9DA100BDEB40 /* NDStartVC.swift in Sources */,
+				95CA8E801DD62BD0000390AF /* NDTextField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05BC1DCE9B2A00BDEB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953F05C51DCE9B2A00BDEB40 /* AlcoMapTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		953F05C71DCE9B2A00BDEB40 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				953F05D01DCE9B2A00BDEB40 /* AlcoMapUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		953F05C21DCE9B2A00BDEB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 953F05AB1DCE9B2900BDEB40 /* AlcoMap */;
+			targetProxy = 953F05C11DCE9B2A00BDEB40 /* PBXContainerItemProxy */;
+		};
+		953F05CD1DCE9B2A00BDEB40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 953F05AB1DCE9B2900BDEB40 /* AlcoMap */;
+			targetProxy = 953F05CC1DCE9B2A00BDEB40 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		953F05B31DCE9B2900BDEB40 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				953F05B41DCE9B2900BDEB40 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		953F05B81DCE9B2900BDEB40 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				953F05B91DCE9B2900BDEB40 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		953F05D21DCE9B2A00BDEB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		953F05D31DCE9B2A00BDEB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		953F05D51DCE9B2A00BDEB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 130C3AA6C74FD87F8C4CF951 /* Pods-AlcoMap.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nd.alcomap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		953F05D61DCE9B2A00BDEB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11EE87F7FDA621C06C029FF4 /* Pods-AlcoMap.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMap/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nd.alcomap;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		953F05D81DCE9B2A00BDEB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ND.AlcoMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoMap.app/AlcoMap";
+			};
+			name = Debug;
+		};
+		953F05D91DCE9B2A00BDEB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMapTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ND.AlcoMapTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlcoMap.app/AlcoMap";
+			};
+			name = Release;
+		};
+		953F05DB1DCE9B2A00BDEB40 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ND.AlcoMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AlcoMap;
+			};
+			name = Debug;
+		};
+		953F05DC1DCE9B2A00BDEB40 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 3E6P6Z2C4R;
+				INFOPLIST_FILE = AlcoMapUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ND.AlcoMapUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = AlcoMap;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		953F05A71DCE9B2900BDEB40 /* Build configuration list for PBXProject "AlcoMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953F05D21DCE9B2A00BDEB40 /* Debug */,
+				953F05D31DCE9B2A00BDEB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953F05D41DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953F05D51DCE9B2A00BDEB40 /* Debug */,
+				953F05D61DCE9B2A00BDEB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953F05D71DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMapTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953F05D81DCE9B2A00BDEB40 /* Debug */,
+				953F05D91DCE9B2A00BDEB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		953F05DA1DCE9B2A00BDEB40 /* Build configuration list for PBXNativeTarget "AlcoMapUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				953F05DB1DCE9B2A00BDEB40 /* Debug */,
+				953F05DC1DCE9B2A00BDEB40 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 953F05A41DCE9B2900BDEB40 /* Project object */;
+}

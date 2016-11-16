@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Y5g-Dv-HlV">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AuthorizationVC-->
+        <scene sceneID="RAy-Qn-pPX">
+            <objects>
+                <viewController id="Y5g-Dv-HlV" customClass="NDAuthorizationVC" customModule="AlcoMap" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3r-9c-eWg"/>
+                        <viewControllerLayoutGuide type="bottom" id="adK-41-6uT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="rrp-7w-ucm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="authBG" translatesAutoresizingMaskIntoConstraints="NO" id="Pdy-7b-0ZC"/>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OzM-2a-e4R">
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="sq4-DR-LfU">
+                                    <frame key="frameInset"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="password" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-uf-7mJ" customClass="NDAuthorizationTextField" customModule="AlcoMap" customModuleProvider="target">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="LQ9-jd-CNd"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsClearButtonRect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Th3-LR-WTT">
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="194" id="0lR-Kk-w5A"/>
+                                                <constraint firstAttribute="height" constant="30" id="yDf-Zo-p4h"/>
+                                            </constraints>
+                                            <state key="normal" title="Войти">
+                                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginWithSender:" destination="Y5g-Dv-HlV" eventType="touchUpInside" id="eyF-un-I8N"/>
+                                            </connections>
+                                        </button>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="admin" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q9s-Rb-FWN" customClass="NDAuthorizationTextField" customModule="AlcoMap" customModuleProvider="target">
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="30" id="y20-Y4-isU"/>
+                                            </constraints>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <userDefinedRuntimeAttributes>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelTextColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="floatingLabelActiveTextColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                    <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </userDefinedRuntimeAttribute>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="animateEvenIfNotFirstResponder" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="adjustsClearButtonRect" value="YES"/>
+                                                <userDefinedRuntimeAttribute type="boolean" keyPath="keepBaseline" value="YES"/>
+                                            </userDefinedRuntimeAttributes>
+                                        </textField>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="q9s-Rb-FWN" firstAttribute="centerX" secondItem="evZ-uf-7mJ" secondAttribute="centerX" id="77A-0u-etl"/>
+                                        <constraint firstItem="evZ-uf-7mJ" firstAttribute="centerY" secondItem="sq4-DR-LfU" secondAttribute="centerY" constant="-0.5" id="8tu-Et-WH0"/>
+                                        <constraint firstAttribute="bottom" secondItem="Th3-LR-WTT" secondAttribute="bottom" constant="20" id="AXu-ei-NEx"/>
+                                        <constraint firstItem="Th3-LR-WTT" firstAttribute="centerX" secondItem="evZ-uf-7mJ" secondAttribute="centerX" id="Jva-4c-Jki"/>
+                                        <constraint firstItem="evZ-uf-7mJ" firstAttribute="trailing" secondItem="sq4-DR-LfU" secondAttribute="trailingMargin" constant="-28" id="KK1-QL-N59"/>
+                                        <constraint firstItem="evZ-uf-7mJ" firstAttribute="top" secondItem="q9s-Rb-FWN" secondAttribute="bottom" constant="17" id="ZJT-qa-dJB"/>
+                                        <constraint firstItem="q9s-Rb-FWN" firstAttribute="trailing" secondItem="evZ-uf-7mJ" secondAttribute="trailing" id="aFP-vi-xrt"/>
+                                        <constraint firstItem="evZ-uf-7mJ" firstAttribute="leading" secondItem="sq4-DR-LfU" secondAttribute="leadingMargin" constant="27" id="roh-EZ-yg1"/>
+                                        <constraint firstItem="q9s-Rb-FWN" firstAttribute="leading" secondItem="evZ-uf-7mJ" secondAttribute="leading" id="y23-Xk-j9R"/>
+                                    </constraints>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="163" id="Vc7-gc-1eh"/>
+                                </constraints>
+                                <blurEffect style="light"/>
+                            </visualEffectView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AlcoMap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkt-gT-jLd">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="208" id="Lpc-mg-05Q"/>
+                                    <constraint firstAttribute="height" constant="42" id="PUn-Qi-KGg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="36"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Pdy-7b-0ZC" firstAttribute="top" secondItem="dkt-gT-jLd" secondAttribute="bottom" constant="-163" id="5Jy-1c-yb5"/>
+                            <constraint firstItem="OzM-2a-e4R" firstAttribute="leading" secondItem="rrp-7w-ucm" secondAttribute="leading" id="EUA-Yl-wDw"/>
+                            <constraint firstItem="Pdy-7b-0ZC" firstAttribute="leading" secondItem="rrp-7w-ucm" secondAttribute="leading" id="YS2-sq-ZtK"/>
+                            <constraint firstAttribute="trailing" secondItem="OzM-2a-e4R" secondAttribute="trailing" id="Zos-XH-F52"/>
+                            <constraint firstItem="adK-41-6uT" firstAttribute="top" secondItem="Pdy-7b-0ZC" secondAttribute="bottom" id="aWV-nD-DkP"/>
+                            <constraint firstItem="OzM-2a-e4R" firstAttribute="centerY" secondItem="Pdy-7b-0ZC" secondAttribute="centerY" constant="-18" id="dfe-eN-7Lz"/>
+                            <constraint firstAttribute="trailing" secondItem="Pdy-7b-0ZC" secondAttribute="trailing" id="i10-kQ-b1h"/>
+                            <constraint firstItem="dkt-gT-jLd" firstAttribute="centerX" secondItem="Pdy-7b-0ZC" secondAttribute="centerX" id="i9s-du-nmD"/>
+                            <constraint firstItem="Pdy-7b-0ZC" firstAttribute="top" secondItem="rrp-7w-ucm" secondAttribute="top" id="zvS-Vd-FqM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="loginTextField" destination="q9s-Rb-FWN" id="SyG-6n-mgW"/>
+                        <outlet property="passwordTextField" destination="evZ-uf-7mJ" id="6oA-q2-bDF"/>
+                        <segue destination="F0H-tL-eUx" kind="show" identifier="authorizationToMap" id="aLe-Of-qsK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SgO-Zn-YWR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-199.25037481259372"/>
+        </scene>
+        <!--Map-->
+        <scene sceneID="i14-Xg-p7Q">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Map" id="F0H-tL-eUx" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="odh-Az-Jk8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="861" y="-200"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="authBG" width="20" height="11"/>
+    </resources>
+</document>
