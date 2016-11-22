@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eAa-kv-3Ba">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="eAa-kv-3Ba">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,13 +23,32 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M51-0y-6sX" customClass="GMSMapView">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Адрес" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cjK-fE-wYd">
+                                <rect key="frame" x="39" y="30" width="296" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pj6-V6-YM4"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="gac-Xd-F0G" firstAttribute="top" secondItem="M51-0y-6sX" secondAttribute="bottom" id="7pT-cc-SrX"/>
+                            <constraint firstItem="cjK-fE-wYd" firstAttribute="leading" secondItem="ftg-f2-9kh" secondAttribute="leadingMargin" constant="23" id="Ceh-L7-YfZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="cjK-fE-wYd" secondAttribute="trailing" constant="24" id="O2l-XX-ITY"/>
                             <constraint firstAttribute="trailing" secondItem="M51-0y-6sX" secondAttribute="trailing" id="Ui4-ad-IKw"/>
+                            <constraint firstItem="cjK-fE-wYd" firstAttribute="top" secondItem="WmE-oE-zj5" secondAttribute="bottom" constant="10" id="Wz5-LA-WTO"/>
                             <constraint firstItem="M51-0y-6sX" firstAttribute="leading" secondItem="ftg-f2-9kh" secondAttribute="leading" id="mVm-uJ-N3n"/>
                             <constraint firstItem="M51-0y-6sX" firstAttribute="top" secondItem="ftg-f2-9kh" secondAttribute="top" id="vVz-yQ-kcZ"/>
                         </constraints>

@@ -11,9 +11,9 @@ import JVFloatLabeledTextField
 
 class NDAuthorizationTextField: JVFloatLabeledTextField {
    
-    override func layoutSubviews() {
-        super.layoutSubviews()
+    override func awakeFromNib() {
         addBottomLine()
+        
         placeholderColor = UIColor.white
         
         let attributes = [NSForegroundColorAttributeName : UIColor.white]
